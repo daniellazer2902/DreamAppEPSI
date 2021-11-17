@@ -12,6 +12,7 @@ function AddDreamPage(props) {
         )
     }
 
+    
 
 const styles = StyleSheet.create({
     container: {
