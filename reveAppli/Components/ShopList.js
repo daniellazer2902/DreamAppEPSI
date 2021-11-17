@@ -79,8 +79,8 @@ function ShopList(props){
             <TouchableOpacity onPress={()=>buyItem(item)} style={{height:100, width:100,margin:1}}>
                 <View>
                     {/* <Image style={{width:75,height:75 }} source={{uri:item[1].image}}></Image> */}
-                    <Text style={{zIndex:'1',}}>{item[1].title}</Text>
-                    <Text style={{zIndex:'1'}}>{item[1].date}</Text>
+                    <Text>{item[1].title}</Text>
+                    <Text>{item[1].date}</Text>
                 </View>
             </TouchableOpacity>
         )
