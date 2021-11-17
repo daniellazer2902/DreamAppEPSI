@@ -4,10 +4,22 @@ import { StyleSheet, Text, View, ScrollView, TouchableOpacity } from 'react-nati
 
 function ViewDreamPage(props) {
     
+        let item = JSON.stringify(props.dream[1]);
+
+        // let dic  = {
+        //   // title desc places[] objects[] themes[] peoples[]
+        //   // title desc typeReve emotions[] date quality
+        //   "title": "Bonjour",
+        //   "":""
+        // }
+
+        //let item = JSON.stringify(dic);
+
+
         return (
             // 
             <View style={{position: 'absolute', top: 100}}>
-                <Text>{JSON.stringify(props.dream)}</Text>
+                <Text>{item}</Text>
             </View>
         )
     }

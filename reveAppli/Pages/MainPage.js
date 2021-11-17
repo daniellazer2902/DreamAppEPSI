@@ -118,6 +118,9 @@ function MainPage({ navigation, route }) {
 
                 <Content/>  
 
+
+                {/* NAV BAR AVEC LES STYLES */}
+
                 <View style={styles.containerNavBarre}>
                     <TouchableOpacity activeOpacity={1} onPress={() => LoadHome()}>
                         <Image style={{height: 40, width: 40, opacity: 0.6, backgroundColor: 'rgba(255, 255, 255, 0)', marginTop: 'auto', marginBottom: 'auto'}} source={require('../Images/ShopLogo.png')}/>

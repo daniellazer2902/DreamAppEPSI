@@ -53,6 +53,7 @@ function ProfilPage(props) {
       <Text style={{
                     marginLeft:'30%',
                     color:'blue',
+                    
                   }}>Modifer</Text>
                   </View>
                   

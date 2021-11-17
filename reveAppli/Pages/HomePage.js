@@ -8,7 +8,7 @@ function HomePage(props) {
     
         return (
             <View style={{position:'absolute',top:100}}>
-                <Text>Boutique</Text>
+                <Text>Home</Text>
 
                 <ShopList toLoad = {props.toLoad} dreamObject = {props.dreamObject}/>
 
