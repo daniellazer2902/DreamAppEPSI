@@ -1,10 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View, ScrollView, TouchableOpacity, h1 } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, TouchableOpacity } from 'react-native';
+
 
 
 function ViewDreamPage(props) {
     
-        let item = JSON.stringify(props.dream[1]);
+        let item = props.dream[1];
 
         // let dic  = {
         //   // title desc places[] objects[] themes[] peoples[]
@@ -18,21 +19,57 @@ function ViewDreamPage(props) {
 
         return (
             // 
-            <View style={{position: 'absolute', top: 100}}>
-              <Text style={{fontSize : 25, marginLeft : 20, fontWeight : 'bold'}}>Informations sur ton rêve : {"\n"} </Text>
-              <Text style={styles.text}>Titre : </Text>
-              <Text style={styles.text}>Date : </Text>
-              <Text style={styles.text}>Description : </Text>
-              <Text style={styles.text}>Lieu : </Text>
-              <Text style={styles.text}>Objets : </Text>
-              <Text style={styles.text}>Thèmes : </Text>
-              <Text style={styles.text}>Personnages présents : </Text>
-              <Text style={styles.text}>Qualité du rêve : </Text>
-              <Text style={styles.text}>Type : </Text>
-              <Text style={styles.text}>Lucidité : </Text>
-              <Text style={styles.text}>Actions : </Text>              
-                <Text>{item}</Text>
-            </View>
+            
+            <ScrollView style={{position: 'absolute', top: 100}}>
+              <Text style={{fontSize : 30, marginLeft : 75, fontWeight : 'bold', textDecorationLine : 'underline'}}>{"\n"} Informations sur ton rêve : {"\n"} </Text>
+
+              <View style={styles.rectangle}>
+                <Text style={styles.text}>Titre : {item.title}</Text> 
+              </View>
+
+              <View style={styles.rectangle}>             
+                <Text style={styles.text}>Date : {item.date}</Text>
+              </View> 
+
+              <View style={styles.rectangle}>
+                <Text style={styles.text}>Description : {item.desc}</Text>
+              </View>
+
+              <View style={styles.rectangle}>
+                <Text style={styles.text}>Lieu : {item.places}</Text>
+              </View>
+
+              <View style={styles.rectangle}>
+                <Text style={styles.text}>Objets : {item.objects}</Text>
+              </View>
+
+              <View style={styles.rectangle}>
+                <Text style={styles.text}>Thèmes : {item.themes}</Text>
+              </View>
+
+              <View style={styles.rectangle}>
+                <Text style={styles.text}>Personnages présents : {item.peoples}</Text>
+              </View>
+
+              <View style={styles.rectangle}>
+                <Text style={styles.text}>Qualité du rêve : {item.quality}</Text>
+              </View>
+
+              <View style={styles.rectangle}>
+                <Text style={styles.text}>Type : {item.type}</Text>
+              </View>
+
+              <View style={styles.rectangle}>
+                <Text style={styles.text}>Lucidité : {item.lucidity}</Text>
+              </View>
+
+              <View style={styles.rectangle}>
+                <Text style={styles.text}>Actions : {item.actions}</Text>  
+              </View>
+
+            </ScrollView>
+
+                     
         )
     }
 
@@ -49,15 +86,29 @@ const styles = StyleSheet.create({
       justifyContent: 'center',
     },
     title: {
-        fontSize: 25,
-        marginLeft: 10,
-        color: 'black',
+      height: '100%',
+      width: '100%',
+      fontSize: 25,
+      marginLeft: 10,
+      color: 'black',
       },
       text : {
+        height: '100%',
+        width: '100%',
         marginLeft : 15,
-        textDecorationLine : 'underline',
+        fontSize : 18,
+        textAlign : 'center',
+      },
+      rectangle : {
+        textAlign : 'center',
+        backgroundColor: 'lightgray',
+        marginRight: 5,
+        marginTop: 30,
+        marginLeft: 15,
+        height : 30,
+        borderRadius : 20,
       }
+      
   })
 
   export default ViewDreamPage;
-
