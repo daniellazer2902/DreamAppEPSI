@@ -1,12 +1,12 @@
 {
   "expo": {
-    "name": "Demineur",
-    "slug": "Demineur",
+    "name": "DreamApp",
+    "slug": "DreamApp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/dreaming.png",
       "resizeMode": "contain",
       "backgroundColor": "#FFFFFF"
     },
@@ -18,7 +18,7 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.equi.demineur"
+      "bundleIdentifier": "com.equi.dreamApp"
     },
     "android": {
       "adaptiveIcon": {

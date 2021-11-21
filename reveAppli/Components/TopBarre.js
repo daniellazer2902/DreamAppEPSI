@@ -54,7 +54,7 @@ function TopBarre(props) {
         return (
             <View style={styles.containerNavBarre}>
 
-                <Image style={{height: 50, margin: 20, width: 50, borderRadius: 100, marginLeft: 30, marginTop: 0, backgroundColor: 'rgba(255, 255, 255, 0)',}} source={require('../assets/GrandLogoTP.png')}/>                
+                <Image style={{height: 50, margin: 20, width: 50, borderRadius: 100, marginLeft: 30, marginTop: 0, backgroundColor: 'rgba(255, 255, 255, 0)',}} source={require('../assets/dreaming.png')}/>                
 
             </View>
         )    

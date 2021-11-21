@@ -82,7 +82,7 @@ function AddDreamPage(props) {
         }
 
         let newJSON = [...dreamList, dreamJs];
-        alert(newJSON);
+        //alert(newJSON);
 
         // // create a path you want to write to
         // var path = RNFS.DocumentDirectoryPath + '/data/dreamlist.json';

@@ -19,9 +19,9 @@ function ViewDreamPage(props) {
 
         return (
             // 
-            
-            <ScrollView style={{position: 'absolute', top: 100}}>
-              <Text style={{fontSize : 30, marginLeft : 75, fontWeight : 'bold', textDecorationLine : 'underline'}}>{"\n"} Informations sur ton rêve : {"\n"} </Text>
+            <View style={{position:'absolute', top:100, height:'100%'}}>
+            <ScrollView style={{height:3000}}>
+              <Text style={{fontSize : 30, marginLeft : 'auto', marginRight:'auto', fontWeight : 'bold', textDecorationLine : 'underline'}}>{"\n"} Informations sur ton rêve : {"\n"} </Text>
 
               <View style={styles.rectangle}>
                 <Text style={styles.text}>Titre : {item.title}</Text> 
@@ -67,7 +67,10 @@ function ViewDreamPage(props) {
                 <Text style={styles.text}>Actions : {item.actions}</Text>  
               </View>
 
+              <View style={{height:200}}></View>
+
             </ScrollView>
+            </View>
 
                      
         )
@@ -93,7 +96,7 @@ const styles = StyleSheet.create({
       color: 'black',
       },
       text : {
-        height: '100%',
+        height:35,
         width: '100%',
         marginLeft : 15,
         fontSize : 18,
@@ -104,7 +107,6 @@ const styles = StyleSheet.create({
         backgroundColor: 'lightgray',
         marginRight: 5,
         marginTop: 30,
-        marginLeft: 15,
         height : 30,
         borderRadius : 20,
       }

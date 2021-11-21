@@ -123,10 +123,10 @@ function MainPage({ navigation, route }) {
 
                 <View style={styles.containerNavBarre}>
                     <TouchableOpacity activeOpacity={1} onPress={() => LoadHome()}>
-                        <Image style={{height: 40, width: 40, opacity: 0.6, backgroundColor: 'rgba(255, 255, 255, 0)', marginTop: 'auto', marginBottom: 'auto'}} source={require('../Images/ShopLogo.png')}/>
+                        <Image style={{height: 40, width: 40, opacity: 0.6, backgroundColor: 'rgba(255, 255, 255, 0)', marginTop: 'auto', marginBottom: 'auto'}} source={require('../Images/open-book.png')}/>
                     </TouchableOpacity>
                     <TouchableOpacity activeOpacity={1} onPress={() => LoadAddDream()}>
-                        <Image style={{transform: [{ rotate: '30deg' }],height: 40, width: 42, opacity: 0.6, backgroundColor: 'rgba(255, 255, 255, 0)', marginTop: 'auto', marginBottom: 'auto'}} source={require('../Images/BombeLogo.png')}/>
+                        <Image style={{transform: [{ rotate: '0deg' }],height: 40, width: 42, opacity: 0.6, backgroundColor: 'rgba(255, 255, 255, 0)', marginTop: 'auto', marginBottom: 'auto'}} source={require('../Images/adding.png')}/>
                     </TouchableOpacity>
                     <TouchableOpacity activeOpacity={1} onPress={() => LoadStat()}>
                         <Image style={{height: 40, width: 40, opacity: 0.6, backgroundColor: 'rgba(255, 255, 255, 0)', marginTop: 'auto', marginBottom: 'auto'}} source={require('../Images/StatLogo.png')}/>
