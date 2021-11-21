@@ -101,8 +101,6 @@ function AddDreamPage(props) {
           <View style={{position:'absolute', top:100, height:'100%'}}>
               <ScrollView style={{height:3000}}>
 
-                <Text>AddDream</Text>
-
                 <View style={styles.categorie}>
                   <Text style={styles.title}>Reve Lucide ?</Text>
                   <Switch

@@ -7,7 +7,7 @@ function StatPage(props) {
         return (
 
             <View style={{position: 'absolute', top: 100}}>
-                <Text>Stat</Text>
+                <Text style={{marginLeft:'auto',marginRight:'auto'}}>Stat Bientot disponible</Text>
             </View>
         )
     }
