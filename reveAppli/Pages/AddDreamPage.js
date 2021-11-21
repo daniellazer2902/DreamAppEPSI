@@ -3,7 +3,6 @@ import { StyleSheet, Text, TextInput, Switch, View, ScrollView, SafeAreaView, To
 import Slider from '@react-native-community/slider';
 import dreamList from '../data.json';
 
-
 function AddDreamPage(props) {
     
       const [isLucid, setisLucid] = useState(false);
@@ -82,6 +81,9 @@ function AddDreamPage(props) {
         }
 
         let newJSON = [...dreamList, dreamJs];
+
+
+        //FileSystem.writeAsStringAsync(FileSystem.documentDirectory + 'database.json', newJSON);
         //alert(newJSON);
 
         // // create a path you want to write to
@@ -126,7 +128,7 @@ function AddDreamPage(props) {
                 <View style={styles.categorie}>
                   <Text style={styles.title}>Titre</Text>
                   <TextInput
-                    style={{marginLeft:'auto',marginRight:'auto'}}
+                    style={styles.input}
                     onChangeText={onChangeTitle}
                     value={title}
                     placeholder="Titre d reve"
