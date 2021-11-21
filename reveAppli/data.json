@@ -1,0 +1,44 @@
+[
+    {
+        "title":"Reve 1",
+        "date":"01-12-2021",
+        "desc":"",
+        "places":["Chambre","Campus"],
+        "objects":["ordi","batterie"],
+        "themes":["cours","soleil"],
+        "peoples":["Daniel.G"],
+        "quality":3,
+        "type":"Normal",
+        "lucidity":false,
+        "actions":["travailler","rigoler","amuser"],
+        "image":""
+    },
+    {
+        "title":"Reve 2",
+        "date":"02-12-2021",
+        "desc":"xt ever since the 1500s, when an unknown printer took a ",
+        "places":["Chambre","Campus"],
+        "objects":["ordi","batterie"],
+        "themes":["cours"],
+        "peoples":["Daniel.G"],
+        "quality":1,
+        "type":"Normal",
+        "lucidity":true,
+        "actions":[],
+        "image":""
+    },
+    {
+        "title":"Reve 3",
+        "date":"02-12-2021",
+        "desc":"xt ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially uncha",
+        "places":["Chambre","Campus"],
+        "objects":["ordi","batterie"],
+        "themes":["cours","soleil"],
+        "peoples":["Daniel.G"],
+        "quality":3,
+        "type":"Normal",
+        "lucidity":false,
+        "actions":["rigoler","amuser"],
+        "image":""
+    }
+]
